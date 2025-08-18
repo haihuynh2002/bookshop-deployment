@@ -12,7 +12,7 @@ patches:
 configMapGenerator:
 - behavior: merge
   files:
-  - application-prod.yml
+  - application-testdata.yml
   name: catalog-config
 images:
 - name: bookshop-catalog-service

@@ -11,4 +11,4 @@ spec:
             - name: BPL_JVM_THREAD_COUNT
               value: '100'
             - name: SPRING_PROFILES_ACTIVE
-              value: prod
+              value: testdata
