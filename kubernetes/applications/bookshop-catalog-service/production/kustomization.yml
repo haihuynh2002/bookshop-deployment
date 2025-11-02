@@ -17,7 +17,7 @@ configMapGenerator:
 images:
 - name: bookshop-catalog-service
   newName: ghcr.io/haihuynh2002/bookshop-catalog-service
-  newTag: b29494a3537ff40375120d5d6a3aca04184ac942
+  newTag: 90336be9208eb59a8b314ebf3ed6dffcd84e515b
 replicas:
 - count: 1
   name: catalog-service
