@@ -16,7 +16,7 @@ configMapGenerator:
   name: payment-config
 
 images:
-- name: bookshop-payment-service
+- name: payment-service
   newName: ghcr.io/haihuynh2002/bookshop-payment-service
   newTag: latest
 

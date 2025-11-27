@@ -16,7 +16,7 @@ configMapGenerator:
   name: order-config
 
 images:
-- name: bookshop-order-service
+- name: order-service
   newName: ghcr.io/haihuynh2002/bookshop-order-service
   newTag: latest
 

@@ -16,7 +16,7 @@ configMapGenerator:
   name: exchange-config
 
 images:
-- name: bookshop-exchange-service
+- name: exchange-service
   newName: ghcr.io/haihuynh2002/bookshop-exchange-service
   newTag: latest
 

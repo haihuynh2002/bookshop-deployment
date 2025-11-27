@@ -16,7 +16,7 @@ configMapGenerator:
   name: chat-config
 
 images:
-- name: bookshop-chat-service
+- name: chat-service
   newName: ghcr.io/haihuynh2002/bookshop-chat-service
   newTag: latest
 

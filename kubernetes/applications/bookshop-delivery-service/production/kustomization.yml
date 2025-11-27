@@ -16,7 +16,7 @@ configMapGenerator:
   name: delivery-config
 
 images:
-- name: bookshop-delivery-service
+- name: delivery-service
   newName: ghcr.io/haihuynh2002/bookshop-delivery-service
   newTag: latest
 

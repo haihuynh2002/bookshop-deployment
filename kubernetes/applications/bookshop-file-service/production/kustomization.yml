@@ -16,7 +16,7 @@ configMapGenerator:
   name: file-config
 
 images:
-- name: bookshop-file-service
+- name: file-service
   newName: ghcr.io/haihuynh2002/bookshop-file-service
   newTag: latest
 

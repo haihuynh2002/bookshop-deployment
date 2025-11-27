@@ -16,7 +16,7 @@ configMapGenerator:
   name: notification-config
 
 images:
-- name: bookshop-notification-service
+- name: notification-service
   newName: ghcr.io/haihuynh2002/bookshop-notification-service
   newTag: latest
 

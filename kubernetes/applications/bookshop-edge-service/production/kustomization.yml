@@ -17,7 +17,7 @@ configMapGenerator:
   name: edge-config
 
 images:
-- name: bookshop-edge-service
+- name: edge-service
   newName: ghcr.io/haihuynh2002/bookshop-edge-service
   newTag: latest
 
