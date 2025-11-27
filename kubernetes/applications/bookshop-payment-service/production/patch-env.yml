@@ -7,6 +7,7 @@ spec:
     spec:
       containers:
         - name: payment-service
+          imagePullPolicy: Always
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: prod

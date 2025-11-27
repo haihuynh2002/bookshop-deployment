@@ -1,3 +1,6 @@
 spring:
   config:
     import: configtree:/workspace/secrets/*/
+paypal:
+  cancel-url: http://bookshop-forever.duckdns.org/payments/cancel
+  success-url: http://bookshop-forever.duckdns.org/payments/success

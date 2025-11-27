@@ -67,6 +67,6 @@ kubectl create secret generic bookshop-rabbitmq-credentials \
 unset RABBITMQ_USERNAME
 unset RABBITMQ_PASSWORD
 
-echo "\n🍃 Secret 'polar-rabbitmq-credentials' has been created for Spring Boot applications to interact with RabbitMQ."
+echo "\n🍃 Secret 'bookshop-rabbitmq-credentials' has been created for Spring Boot applications to interact with RabbitMQ."
 
 echo "\n🐰 RabbitMQ deployment completed.\n"

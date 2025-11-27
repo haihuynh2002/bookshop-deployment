@@ -49,7 +49,7 @@ echo "\n🔑 Generating Secret with Keycloak client secret."
 kubectl delete secret bookshop-keycloak-client-credentials || true
 
 kubectl create secret generic bookshop-keycloak-client-credentials \
-    --from-literal=spring.security.oauth2.client.registration.keycloak.client-secret="$clientSecret"
+    --from-literal=spring.security.oauth2.client.registration.keycloak.client-secret=polar-keycloak-secret
 
 echo "\n🍃 A 'bookshop-keycloak-client-credentials' has been created for Spring Boot applications to interact with Keycloak."
 

@@ -1,13 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: edge-service
+  name: order-service
 spec:
   template:
     spec:
       containers:
-        - name: edge-service
-          imagePullPolicy: Always
+        - name: order-service
           env:
             - name: SPRING_PROFILES_ACTIVE
-              value: prod
+              value: staging

@@ -7,6 +7,7 @@ spec:
     spec:
       containers:
         - name: notification-service
+          imagePullPolicy: Always
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: prod

@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- github.com/haihuynh2002/bookshop-catalog-service/k8s?ref=b29494a3537ff40375120d5d6a3aca04184ac942
+- github.com/haihuynh2002/bookshop-catalog-service/k8s?ref=main
 
 patches:
 - path: patch-env.yml
@@ -12,12 +12,12 @@ patches:
 configMapGenerator:
 - behavior: merge
   files:
-  - application-testdata.yml
+  - application-prod.yml
   name: catalog-config
 images:
 - name: bookshop-catalog-service
   newName: ghcr.io/haihuynh2002/bookshop-catalog-service
-  newTag: 98853e4df4c660c32ab59d036c172b2a6c203660
+  newTag: latest
 replicas:
 - count: 1
   name: catalog-service

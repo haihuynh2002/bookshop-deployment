@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: edge-service
+  name: bookshop-ui
 spec:
   template:
     spec:
       containers:
-        - name: edge-service
+        - name: bookshop-ui
           imagePullPolicy: Always
           env:
             - name: SPRING_PROFILES_ACTIVE
