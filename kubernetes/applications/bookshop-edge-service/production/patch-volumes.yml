@@ -17,10 +17,10 @@ spec:
       volumes:
         - name: redis-credentials-volume
           secret:
-            secretName: polar-redis-credentials
+            secretName: bookshop-redis-credentials
         - name: keycloak-client-credentials-volume
           secret:
-            secretName: polar-keycloak-client-credentials
+            secretName: bookshop-keycloak-client-credentials
         - name: keycloak-issuer-client-secret-volume
           secret:
             secretName: keycloak-issuer-client-secret
