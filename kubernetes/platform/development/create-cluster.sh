@@ -93,21 +93,21 @@ kubectl wait \
 
 echo "\n📦 Deploying bookshop UI..."
 
-kubectl apply -f services/polar-ui.yml
+#kubectl apply -f services/polar-ui.yml
 
 sleep 5
 
 echo "\n⌛ Waiting for bookshop UI to be deployed..."
 
-while [ $(kubectl get pod -l app=polar-ui | wc -l) -eq 0 ] ; do
-  sleep 5
-done
+#while [ $(kubectl get pod -l app=polar-ui | wc -l) -eq 0 ] ; do
+#  sleep 5
+#done
 
 echo "\n⌛ Waiting for bookshop UI to be ready..."
 
-kubectl wait \
-  --for=condition=ready pod \
-  --selector=app=polar-ui \
-  --timeout=180s
+#kubectl wait \
+#  --for=condition=ready pod \
+#  --selector=app=polar-ui \
+#  --timeout=180s
 
 echo "\n⛵ Happy Sailing!\n"

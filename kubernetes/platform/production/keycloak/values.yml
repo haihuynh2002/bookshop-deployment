@@ -1,8 +1,24 @@
-fullnameOverride: polar-keycloak
+fullnameOverride: bookshop-keycloak
 commonAnnotations:
-  app: polar-keycloak
+  app: bookshop-keycloak
 image:
-  tag: 24.0.5
+  registry: docker.io
+  repository: bitnamilegacy/keycloak
+  tag: 23.0.5
+keycloakConfigCli:
+  image:
+    registry: docker.io
+    repository: bitnamilegacy/keycloak-config-cli
+postgresql:
+  enabled: true
+  image:
+    registry: docker.io
+    repository: bitnamilegacy/postgresql
+  primary:
+    initdb:
+      image:
+        registry: docker.io
+        repository: bitnamilegacy/postgresql
 extraEnvVars:
   - name: KEYCLOAK_EXTRA_ARGS
     value: "--import-realm"
@@ -32,3 +48,4 @@ resources:
 service:
   type: LoadBalancer
   port: 80
+

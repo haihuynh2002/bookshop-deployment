@@ -1,6 +1,4 @@
-#!/bin/sh
 
-set -euo pipefail
 
 echo "\n🗝️  Create Secret for OAuth2 Client.\n"
 
