@@ -6,7 +6,7 @@ spec:
   template:
     spec:
       containers:
-        - name: payment-service
+        - name: exchange-service
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: prod

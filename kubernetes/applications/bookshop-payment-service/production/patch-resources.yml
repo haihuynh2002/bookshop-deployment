@@ -6,7 +6,7 @@ spec:
   template:
     spec:
       containers:
-        - name: order-service
+        - name: payment-service
           resources:
             requests:
               memory: 756Mi

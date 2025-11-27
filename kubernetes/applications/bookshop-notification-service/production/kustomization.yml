@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- github.com/haihuynh2002/bookshop-payment-service/k8s?ref=main
+- github.com/haihuynh2002/bookshop-notification-service/k8s?ref=main
 
 patches:
   - path: patch-env.yml
@@ -13,14 +13,14 @@ configMapGenerator:
 - behavior: merge
   files:
   - application-prod.yml
-  name: payment-config
+  name: notification-config
 
 images:
-- name: bookshop-payment-service
-  newName: ghcr.io/haihuynh2002/bookshop-payment-service
+- name: bookshop-notification-service
+  newName: ghcr.io/haihuynh2002/bookshop-notification-service
   newTag: latest
 
 replicas:
 - count: 1
-  name: payment-service
+  name: notification-service
 
